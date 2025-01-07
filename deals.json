@@ -1,0 +1,92 @@
+{
+  "newAndHotDeals": [
+    {
+      "title": "Men T-shirt",
+      "price": 199,
+      "discount": "90%",
+      "image": "https://via.placeholder.com/150",
+      "link": ""
+    },
+    {
+      "title": "Men T-shirt",
+      "price": 199,
+      "discount": "90%",
+      "image": "https://via.placeholder.com/150",
+      "link": ""
+    },
+    {
+      "title": "Men T-shirt",
+      "price": 199,
+      "discount": "90%",
+      "image": "https://via.placeholder.com/150",
+      "link": ""
+    }
+  ],
+  "dailyFashionDeals": [],
+  "comboFashionDeals": [
+    {
+      "title": "Combo Pack",
+      "price": 199,
+      "discount": "90% Off",
+      "mainImage": "https://via.placeholder.com/350",
+      "items": [
+        {
+          "title": "Item 1",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        },
+        {
+          "title": "Item 2",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        },
+        {
+          "title": "Item 3",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        },
+        {
+          "title": "Item 4",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Combo Pack",
+      "price": 199,
+      "discount": "90% Off",
+      "mainImage": "https://via.placeholder.com/350",
+      "items": [
+        {
+          "title": "Item 1",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        },
+        {
+          "title": "Item 2",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        },
+        {
+          "title": "Item 3",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        },
+        {
+          "title": "Item 4",
+          "price": 50,
+          "image": "https://via.placeholder.com/150",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}
