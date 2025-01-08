@@ -59,7 +59,7 @@ function renderNewDeals() {
   const container = document.getElementById("new-deals-container");
   productsData.newDeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-12">
+      <div class="col-lg-2 col-md-4 col-sm-6">
         <div class="card deal-card ncard">
           <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
           <div class="card-body">
@@ -78,7 +78,7 @@ function renderelectroDeals() {
   const container = document.getElementById("electronics-container");
   productsData.electrodeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-12">
+      <div class="col-lg-2 col-md-4 col-sm-6">
         <div class="card deal-card ncard">
           <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
           <div class="card-body">
@@ -100,7 +100,7 @@ function renderDailyDeals() {
   const container = document.getElementById("daily-deals-container");
   productsData.dailyDeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-12">
+      <div class="col-lg-2 col-md-4 col-sm-6">
         <div class="card deal-card ncard">
           <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
           <div class="card-body">
@@ -130,7 +130,7 @@ function renderComboDeals() {
     const cardsHTML = combo.items
       .map(
         (item) => `
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4"> <!-- 2 cards per row -->
+          <div class="col-lg-6 col-md-6 col-sm-6 mb-4"> <!-- 2 cards per row -->
             <div class="card deal-card ncard">
               <img src="${item.img}" class="card-img-top" alt="${item.title}">
               <div class="card-body">
@@ -146,7 +146,7 @@ function renderComboDeals() {
 
     // Create a single container for 2 cards per row
     const comboHTML = `
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mcombo">
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mcombo">
           <div class="container p-3 deal-card-combo">
               <h5 class="text-center mb-3"><strong>${combo.title}</strong></h5>
               <div class="row">
