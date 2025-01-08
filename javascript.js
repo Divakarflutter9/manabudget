@@ -4,31 +4,37 @@ const productsData = {
     { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product sh 1.jpg", link: "" },
     { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 1.jpg", link: "" },
     { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 2.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 2.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-    { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
-    { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 4.jpg", link: "" },
+    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 2.jpg", link: "" },
+    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
+    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    // { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
+    // { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 4.jpg", link: "" },
   ],
   dailyDeals:[
     { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
     { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 2.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
-    { title: "tMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 6.jpg", link: "" },
-    { title: "kMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 7.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 8.jpg", link: "" },
+    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
+    // { title: "tMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 6.jpg", link: "" },
+    // { title: "kMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 7.jpg", link: "" },
+    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 8.jpg", link: "" },
   ],
   electrodeals:[
     { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/product e 1.jpg", link: "" },
   ],
-  // comboDeals: [
+  comboDeals: [
+    {
+      title: "Combo Pack",
+      items: [
+        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+      ],
+    },
   //   {
   //     title: "Combo Pack",
-  //     price: 199,
-  //     discount: "90%",
-  //     mainImg: "https://via.placeholder.com/350",
   //     items: [
   //       { title: "Item 1", price: 50, img: "https://via.placeholder.com/150", link: "" },
   //       { title: "Item 2", price: 50, img: "https://via.placeholder.com/150", link: "" },
@@ -38,9 +44,6 @@ const productsData = {
   //   },
   //   {
   //     title: "Combo Pack",
-  //     price: 199,
-  //     discount: "90%",
-  //     mainImg: "https://via.placeholder.com/350",
   //     items: [
   //       { title: "Item 1", price: 50, img: "https://via.placeholder.com/150", link: "" },
   //       { title: "Item 2", price: 50, img: "https://via.placeholder.com/150", link: "" },
@@ -48,19 +51,7 @@ const productsData = {
   //       { title: "Item 4", price: 50, img: "https://via.placeholder.com/150", link: "" },
   //     ],
   //   },
-  //   {
-  //     title: "Combo Pack",
-  //     price: 199,
-  //     discount: "90%",
-  //     mainImg: "https://via.placeholder.com/350",
-  //     items: [
-  //       { title: "Item 1", price: 50, img: "https://via.placeholder.com/150", link: "" },
-  //       { title: "Item 2", price: 50, img: "https://via.placeholder.com/150", link: "" },
-  //       { title: "Item 3", price: 50, img: "https://via.placeholder.com/150", link: "" },
-  //       { title: "Item 4", price: 50, img: "https://via.placeholder.com/150", link: "" },
-  //     ],
-  //   },
-  // ],
+  ],
 };
 
 // Function to generate new deals section
@@ -68,14 +59,14 @@ function renderNewDeals() {
   const container = document.getElementById("new-deals-container");
   productsData.newDeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card deal-card">
+      <div class="col-lg-2 col-md-4 col-sm-12">
+        <div class="card deal-card ncard">
           <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
           <div class="card-body">
             <h5 class="card-title">${deal.title}</h5>
             <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
             <p class="card-text text-success">${deal.discount}</p>
-            <a href="${deal.link}" class="btn btn-primary" target="_blank">View Deal</a>
+            <a href="${deal.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
           </div>
         </div>
       </div>`;
@@ -87,14 +78,14 @@ function renderelectroDeals() {
   const container = document.getElementById("electronics-container");
   productsData.electrodeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card deal-card">
+      <div class="col-lg-2 col-md-4 col-sm-12">
+        <div class="card deal-card ncard">
           <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
           <div class="card-body">
             <h5 class="card-title">${deal.title}</h5>
             <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
             <p class="card-text text-success">${deal.discount}</p>
-            <a href="${deal.link}" class="btn btn-primary" target="_blank">View Deal</a>
+            <a href="${deal.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
           </div>
         </div>
       </div>`;
@@ -109,14 +100,14 @@ function renderDailyDeals() {
   const container = document.getElementById("daily-deals-container");
   productsData.dailyDeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card deal-card">
+      <div class="col-lg-2 col-md-4 col-sm-12">
+        <div class="card deal-card ncard">
           <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
           <div class="card-body">
             <h5 class="card-title">${deal.title}</h5>
             <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
             <p class="card-text text-success">${deal.discount}</p>
-            <a href="${deal.link}" class="btn btn-primary" target="_blank">View Deal</a>
+            <a href="${deal.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
           </div>
         </div>
       </div>`;
@@ -135,45 +126,38 @@ function renderComboDeals() {
   const container = document.getElementById("combo-deals-container");
 
   productsData.comboDeals.forEach((combo, index) => {
-      const itemsHTML = combo.items
-          .map(
-              (item) => `
-                  <div class="mini-card">
-                      <img src="${item.img}" alt="${item.title}">
-                      <p>${item.title}</p>
-                      <p>Price: ${item.price}</p>
-                      <a href="${item.link}" class="btn btn-primary" target="_blank">View Deal</a>
-                  </div>`
-          )
-          .join("");
-
-      const comboHTML = `
-          <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="card deal-card-combo" id="deal-card-${index}">
-                  <img src="${combo.mainImg}" class="card-img-top" alt="${combo.title}">
-                  <div class="card-body main-card">
-                      <h5 class="card-title">${combo.title}</h5>
-                      <p class="card-text"><strong>Price:</strong> ${combo.price}</p>
-                      <p class="card-text text-success">${combo.discount} Off</p>
-                  </div>
-                  <div class="mini-cards-container" id="mini-cards-${index}">
-                      ${itemsHTML}
-                  </div>
+    // Generate HTML for the 2 mini-cards inside each container (2 per row)
+    const cardsHTML = combo.items
+      .map(
+        (item) => `
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4"> <!-- 2 cards per row -->
+            <div class="card deal-card ncard">
+              <img src="${item.img}" class="card-img-top" alt="${item.title}">
+              <div class="card-body">
+                <h5 class="card-title">${item.title}</h5>
+                <p class="card-text"><strong>Price:</strong> ${item.price}</p>
+                <p class="card-text text-success">${item.discount || ''}</p>
+                <a href="${item.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
               </div>
-          </div>`;
+            </div>
+          </div>`
+      )
+      .join(''); // Join the individual cards into a single string
 
-      container.innerHTML += comboHTML;
+    // Create a single container for 2 cards per row
+    const comboHTML = `
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mcombo">
+          <div class="container p-3 deal-card-combo">
+              <h5 class="text-center mb-3"><strong>${combo.title}</strong></h5>
+              <div class="row">
+                  ${cardsHTML}
+              </div>
+          </div>
+      </div>`;
 
-      const mainCard = document.querySelector(`#deal-card-${index} .main-card`);
-      const miniCardsContainer = document.querySelector(`#mini-cards-${index}`);
-
-      mainCard.addEventListener("click", () => {
-          miniCardsContainer.classList.toggle("active");
-      });
+    container.innerHTML += comboHTML;
   });
 }
-
-
 
 // Call render functions to populate the sections
 renderNewDeals();
