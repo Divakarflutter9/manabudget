@@ -59,9 +59,9 @@ function renderNewDeals() {
   const container = document.getElementById("new-deals-container");
   productsData.newDeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
         <div class="card deal-card ncard">
-          <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
+          <img src="${deal.img}" class="card-img-top img-fluid" alt="${deal.title}">
           <div class="card-body">
             <h5 class="card-title">${deal.title}</h5>
             <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
@@ -78,9 +78,9 @@ function renderelectroDeals() {
   const container = document.getElementById("electronics-container");
   productsData.electrodeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
         <div class="card deal-card ncard">
-          <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
+          <img src="${deal.img}" class="card-img-top img-fluid" alt="${deal.title}">
           <div class="card-body">
             <h5 class="card-title">${deal.title}</h5>
             <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
@@ -100,9 +100,9 @@ function renderDailyDeals() {
   const container = document.getElementById("daily-deals-container");
   productsData.dailyDeals.forEach((deal) => {
     const dealHTML = `
-      <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
         <div class="card deal-card ncard">
-          <img src="${deal.img}" class="card-img-top" alt="${deal.title}">
+          <img src="${deal.img}" class="card-img-top img-fluid" alt="${deal.title}">
           <div class="card-body">
             <h5 class="card-title">${deal.title}</h5>
             <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
@@ -130,9 +130,9 @@ function renderComboDeals() {
     const cardsHTML = combo.items
       .map(
         (item) => `
-          <div class="col-lg-6 col-md-6 col-sm-6 mb-4"> <!-- 2 cards per row -->
+          <div class="col-lg-6 col-md-6 col-sm-4 mb-4">
             <div class="card deal-card ncard">
-              <img src="${item.img}" class="card-img-top" alt="${item.title}">
+              <img src="${item.img}" class="card-img-top img-fluid" alt="${item.title}">
               <div class="card-body">
                 <h5 class="card-title">${item.title}</h5>
                 <p class="card-text"><strong>Price:</strong> ${item.price}</p>
