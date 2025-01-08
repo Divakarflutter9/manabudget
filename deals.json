@@ -1,92 +1,25 @@
-{
-  "newAndHotDeals": [
-    {
-      "title": "Men T-shirt",
-      "price": 199,
-      "discount": "90%",
-      "image": "https://via.placeholder.com/150",
-      "link": ""
-    },
-    {
-      "title": "Men T-shirt",
-      "price": 199,
-      "discount": "90%",
-      "image": "https://via.placeholder.com/150",
-      "link": ""
-    },
-    {
-      "title": "Men T-shirt",
-      "price": 199,
-      "discount": "90%",
-      "image": "https://via.placeholder.com/150",
-      "link": ""
-    }
+// JSON data for products
+const productsData = {
+  newDeals: [
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 1.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 1.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 2.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 2.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
+    { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 4.jpg", link: "" },
   ],
-  "dailyFashionDeals": [],
-  "comboFashionDeals": [
-    {
-      "title": "Combo Pack",
-      "price": 199,
-      "discount": "90% Off",
-      "mainImage": "https://via.placeholder.com/350",
-      "items": [
-        {
-          "title": "Item 1",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        },
-        {
-          "title": "Item 2",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        },
-        {
-          "title": "Item 3",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        },
-        {
-          "title": "Item 4",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        }
-      ]
-    },
-    {
-      "title": "Combo Pack",
-      "price": 199,
-      "discount": "90% Off",
-      "mainImage": "https://via.placeholder.com/350",
-      "items": [
-        {
-          "title": "Item 1",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        },
-        {
-          "title": "Item 2",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        },
-        {
-          "title": "Item 3",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        },
-        {
-          "title": "Item 4",
-          "price": 50,
-          "image": "https://via.placeholder.com/150",
-          "link": ""
-        }
-      ]
-    }
-  ]
-}
+  dailyDeals:[
+    { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
+    { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 2.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
+    { title: "tMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 6.jpg", link: "" },
+    { title: "kMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 7.jpg", link: "" },
+    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 8.jpg", link: "" },
+  ],
+  electrodeals:[
+    { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/product e 1.jpg", link: "" },
+  ],
