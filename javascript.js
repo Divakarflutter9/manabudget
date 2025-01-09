@@ -140,6 +140,52 @@ document.addEventListener("DOMContentLoaded", () => {
   renderDailyDeals();
 });
 
+let currentlyPlaying = null; // Store reference to the currently playing video
+
+  // Functionality for each video
+  document.querySelectorAll('.reel-container').forEach((container) => {
+    const video = container.querySelector('.reel-video');
+    const button = container.querySelector('.view-deal-btn');
+    const pauseBtn = container.querySelector('.pause-btn');
+    const caption = container.querySelector('.caption');
+
+    video.addEventListener('click', () => {
+      // Pause currently playing video if any
+      if (currentlyPlaying && currentlyPlaying !== video) {
+        currentlyPlaying.pause();
+        const currentButton = currentlyPlaying.closest('.reel-container').querySelector('.view-deal-btn');
+        currentButton.style.display = 'none';
+        const currentPauseBtn = currentlyPlaying.closest('.reel-container').querySelector('.pause-btn');
+        currentPauseBtn.style.display = 'none';
+        const currentCaption = currentlyPlaying.closest('.reel-container').querySelector('.caption');
+        currentCaption.style.display = 'block'; // Show caption when video is paused
+      }
+
+      // Play the clicked video and unmute
+      video.muted = false;
+      video.play();
+      currentlyPlaying = video; // Update the reference of the currently playing video
+
+      // Hide the caption, display the "View Deal" button and pause button
+      caption.style.display = 'none';
+      button.style.display = 'block';
+      pauseBtn.style.display = 'block';
+    });
+
+    // Pause button functionality
+    pauseBtn.addEventListener('click', () => {
+      video.pause(); // Pause the video
+      button.style.display = 'none'; // Hide the View Deal button
+      pauseBtn.style.display = 'none'; // Hide the pause button
+      caption.style.display = 'block'; // Show the caption again
+    });
+
+    // Handle button click (View Deal)
+    button.addEventListener('click', () => {
+      window.open('https://www.example.com', '_blank'); // Replace with your deal link
+    });
+  });
+
 
 // Function to generate combo deals section
 function renderComboDeals() {
