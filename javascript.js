@@ -1,56 +1,72 @@
 // JSON data for products
 const productsData = {
   newDeals: [
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product sh 1.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 1.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 2.jpg", link: "" },
-    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 2.jpg", link: "" },
-    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
-    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-    // { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
-    // { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 4.jpg", link: "" },
+    { title: "White checks shirt ",oldprice:899, price: 359, discount: "70%", img: "images/shirt1.jpg", link: "https://ajiio.co/Jt3Nob" },
+    { title: "Green checks shirt ",oldprice:899, price: 499, discount: "70%", img: "images/shirt3.jpg", link: "https://myntr.in/SHGxpL" },
+    { title: "Highlander Brand shirt ",oldprice:899, price: 499, discount: "70%", img: "images/shirt4.jpg", link: "https://myntr.in/wNZe8t" },
+    { title: "Urbano Brand shirt ",oldprice:899, price: 359, discount: "70%", img: "images/shirt5.jpg", link: "https://ajiio.co/pBmkzz" },
+    { title: "Highlander Brand shirt ",oldprice:899, price: 98, discount: "70%", img: "images/shirt6.jpg", link: "https://myntr.in/dQ6bpx" },
+    { title: "Ajio Brand shirt ",oldprice:899, price: 555, discount: "70%", img: "images/shirt7.jpg", link: "https://ajiio.co/jVgpqB" },
+    { title: "Roadstar Brand Shirt ",oldprice:899, price: 499, discount: "70%", img: "images/shirt8.jpg", link: "https://myntr.in/kZVd6L" },
+    { title: "White checks shirt ",oldprice:899, price: 679, discount: "70%", img: "images/shirt9.jpg", link: "https://myntr.in/MiSmaT" },
+    { title: "White shirt ",oldprice:899, price: 359, discount: "70%", img: "images/shirt10.jpg", link: "https://myntr.in/mzy4We" },
+    { title: "Indian garage brand  ",oldprice:899, price: 559, discount: "70%", img: "images/shirt11.jpg", link: "https://myntr.in/J7xAbQ" },
+    
+    { title: "Indian garage brand pant  ",oldprice:1199, price: 649, discount: "70%", img: "images/pant1.jpg", link: "https://myntr.in/YT5VvD" },
+    { title: "Myntra brand pant ",oldprice:1199, price: 559, discount: "70%", img: "images/pant2.jpg", link: "https://myntr.in/kEun0M" },
+    { title: "Myntra brand pant ",oldprice:1199, price: 459, discount: "70%", img: "images/pant3.jpg", link: "https://myntr.in/3RY7RL" },
+    { title: "branded pant  ",oldprice:1199, price: 559, discount: "70%", img: "images/pant4.jpg", link: "https://ajiio.co/CErQk2" },
+    { title: "branded pant ",oldprice:1199, price: 559, discount: "70%", img: "images/pant5.jpg", link: "https://myntr.in/Ga1WB1" },
+    { title: "branded pant  ",oldprice:1199, price: 679, discount: "70%", img: "images/pant6.jpg", link: "https://myntr.in/zutpgH" },
+    { title: "branded pant ",oldprice:1199, price: 369, discount: "70%", img: "images/pant7.jpg", link: "https://myntr.in/M6hfQI" },
+    { title: "branded pant ",oldprice:1199, price: 649, discount: "70%", img: "images/pant8.jpg", link: "https://myntr.in/w30yQW" },
+    { title: "branded pant  ",oldprice:1199, price: 649, discount: "70%", img: "images/pant9.jpg", link: "https://myntr.in/ZXYnIy" },
+    { title: "branded pant ",oldprice:1199, price: 369, discount: "70%", img: "images/pant10.jpg", link: "https://myntr.in/iDyFmf" },
+
+    { title: "branded Shoes  ",oldprice:1999, price: 689, discount: "70%", img: "images/shoes1.jpg", link: "https://myntr.in/yzP9CT" },
+    { title: "branded Shoes  ",oldprice:1999, price: 217, discount: "70%", img: "images/shoes2.jpg", link: "https://msho.in/82048u" },
+    { title: "branded Shoes  ",oldprice:1999, price: 549, discount: "70%", img: "images/shoes3.jpg", link: "hhttps://ajiio.co/OdKRz8" },
+    { title: "branded Shoes  ",oldprice:1999, price: 426, discount: "70%", img: "images/shoes4.jpg", link: "https://ajiio.co/qGa0Y8" },
+    { title: "branded Shoes  ",oldprice:1999, price: 689, discount: "70%", img: "images/shoes5.jpg", link: "https://ajiio.co/4RmjMx" },
+    { title: "branded Shoes  ",oldprice:1999, price: 629, discount: "70%", img: "images/shoes6.jpg", link: "https://myntr.in/YAGxzQ" },
+
+
   ],
   dailyDeals:[
-    { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
-    { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-    { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product p 2.jpg", link: "" },
-    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/product s 3.jpg", link: "" },
-    // { title: "tMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 6.jpg", link: "" },
-    // { title: "kMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 7.jpg", link: "" },
-    // { title: "Men T-Shirt", price: 199, discount: "90%", img: "images/pro sh 8.jpg", link: "" },
+    // { title: "wMen T-Shirt",oldprice:1, price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
+    
   ],
   electrodeals:[
-    { title: "wMen T-Shirt", price: 199, discount: "90%", img: "images/product e 1.jpg", link: "" },
+    // { title: "wMen T-Shirt", oldprice:4, price: 199, discount: "90%", img: "images/product e 1.jpg", link: "" },
   ],
   comboDeals: [
-    {
-      title: "Combo Pack",
-      items: [
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-      ],
-    },
-    {
-      title: "Combo Pack",
-      items: [
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-      ],
-    },
-    {
-      title: "Combo Pack",
-      items: [
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-        { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
-      ],
-    },
+    // {
+    //   title: "Combo Pack",
+    //   items: [
+    //     { title: "eMen T-Shirt",oldprice:2, price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt",oldprice:2, price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt",oldprice:2, price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt",oldprice:2, price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //   ],
+    // },
+    // {
+    //   title: "Combo Pack",
+    //   items: [
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //   ],
+    // },
+    // {
+    //   title: "Combo Pack",
+    //   items: [
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //     { title: "eMen T-Shirt", price: 199, discount: "90%", img: "images/pro sh 5.jpg", link: "" },
+    //   ],
+    // },
 
   //   {
   //     title: "Combo Pack",
@@ -81,9 +97,14 @@ function renderNewDeals() {
           <div class="col">
               <div class="card deal-card ncard">
                   <img src="${deal.img}" class="card-img-top img-fluid" alt="${deal.title}">
-                  <div class="card-body">
+                  <div class="card-body text-light">
                       <h5 class="card-title">${deal.title}</h5>
-                      <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
+                      <p class="card-text d-inline">
+    <strong>Price:</strong>
+    <span><strike>${deal.oldprice}</strike></span>
+    <span>${deal.price}</span>
+</p>
+
                       <p class="card-text text-success">${deal.discount}</p>
                       <a href="${deal.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
                   </div>
@@ -101,9 +122,13 @@ function renderelectroDeals() {
         <div class="col">
               <div class="card deal-card ncard">
                   <img src="${deal.img}" class="card-img-top img-fluid" alt="${deal.title}">
-                  <div class="card-body">
+                  <div class="card-body text-light">
                       <h5 class="card-title">${deal.title}</h5>
-                      <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
+<p class="card-text d-inline">
+    <strong>Price:</strong>
+    <span><strike>${deal.oldprice}</strike></span>
+    <span>${deal.price}</span>
+</p>
                       <p class="card-text text-success">${deal.discount}</p>
                       <a href="${deal.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
                   </div>
@@ -123,9 +148,13 @@ function renderDailyDeals() {
         <div class="col">
               <div class="card deal-card ncard">
                   <img src="${deal.img}" class="card-img-top img-fluid" alt="${deal.title}">
-                  <div class="card-body">
+                  <div class="card-body text-light">
                       <h5 class="card-title">${deal.title}</h5>
-                      <p class="card-text"><strong>Price:</strong> ${deal.price}</p>
+<p class="card-text d-inline">
+    <strong>Price:</strong>
+    <span><strike>${deal.oldprice}</strike></span>
+    <span>${deal.price}</span>
+</p>
                       <p class="card-text text-success">${deal.discount}</p>
                       <a href="${deal.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
                   </div>
@@ -199,9 +228,13 @@ function renderComboDeals() {
           <div class="col">
               <div class="card deal-card ncard">
                   <img src="${item.img}" class="card-img-top img-fluid" alt="${item.title}">
-                  <div class="card-body">
+                  <div class="card-body text-light">
                       <h5 class="card-title">${item.title}</h5>
-                      <p class="card-text"><strong>Price:</strong> ${item.price}</p>
+<p class="card-text d-inline">
+    <strong>Price:</strong>
+    <span><strike>${item.oldprice}</strike></span>
+    <span>${item.price}</span>
+</p>
                       <p class="card-text text-success">${item.discount}</p>
                       <a href="${item.link}" class="btn nbutton" target="_blank">View Deal<i class="bi bi-cart"></i></a>
                   </div>
