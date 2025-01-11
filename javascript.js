@@ -1,6 +1,26 @@
 // JSON data for products
 const productsData = {
   newDeals: [
+    
+    { title: "Reagular Brand Slippers ",oldprice:899, price: 299, discount: "70%", img: "images/day2 shoes1.jpg", link: "https://ajiio.co/iCaD1K" },
+    { title: "Green checks shirt ",oldprice:599, price: 247, discount: "60%", img: "images/day2 shirt1.jpg", link: "https://myntr.in/e40fF8" },
+    { title: "Highlander Brand shirt ",oldprice:899, price: 243, discount: "50%", img: "images/day2 shirt2.jpg", link: "https://ajiio.co/xfQE49" },
+    { title: "Urbano Brand shirt ",oldprice:899, price: 250, discount: "20%", img: "images/day2 shirt3.jpg", link: "https://ajiio.co/9P6dge" },
+    { title: "Highlander Brand shirt ",oldprice:899, price: 300, discount: "70%", img: "images/day2 shirt4.jpg", link: "https://fkrt.co/2VJGmr" },
+    { title: "Ajio Brand shirt ",oldprice:899, price: 249, discount: "90%", img: "images/day2 shirt5.jpg", link: "https://fkrt.co/sUtVnY" },
+    { title: "Roadstar Brand Shirt ",oldprice:899, price: 499, discount: "73%", img: "images/day2 shirt6.jpg", link: "https://fkrt.co/014hIO" },
+    { title: "White checks shirt ",oldprice:899, price: 359, discount: "70%", img: "images/day2 shirt7.jpg", link: "https://fkrt.co/83kbaP" },
+    { title: "White shirt ",oldprice:899, price: 229, discount: "70%", img: "images/day2 shirt8.jpg", link: "https://fkrt.co/B2mSvs" },
+    { title: "Indian garage brand  ",oldprice:899, price: 244, discount: "55%", img: "images/day2 shirt9.jpg", link: "https://fkrt.co/2jASNB" },
+    
+    { title: "Indian garage brand pant  ",oldprice:1199, price: 569, discount: "70%", img: "images/day2 pant1.jpg", link: "https://ajiio.co/0Ruop1" },
+    { title: "Myntra brand pant ",oldprice:1099, price: 539, discount: "60%", img: "images/day2 pant2.jpg", link: "https://myntr.in/qP8dju" },
+    { title: "Myntra brand pant ",oldprice:999, price: 299, discount: "40%", img: "images/day2 pant3.jpg", link: "https://fkrt.co/zHomZX" },
+    { title: "branded pant  ",oldprice:2199, price: 248, discount: "90%", img: "images/day2 pant4.jpg", link: "https://fkrt.co/aDhYKi" },
+   
+  ],
+  dailyDeals:[
+    
     { title: "White checks shirt ",oldprice:899, price: 359, discount: "70%", img: "images/shirt1.jpg", link: "https://ajiio.co/Jt3Nob" },
     { title: "Green checks shirt ",oldprice:899, price: 499, discount: "70%", img: "images/shirt3.jpg", link: "https://myntr.in/SHGxpL" },
     { title: "Highlander Brand shirt ",oldprice:899, price: 499, discount: "70%", img: "images/shirt4.jpg", link: "https://myntr.in/wNZe8t" },
@@ -29,10 +49,6 @@ const productsData = {
     { title: "branded Shoes  ",oldprice:1999, price: 426, discount: "70%", img: "images/shoes4.jpg", link: "https://ajiio.co/qGa0Y8" },
     { title: "branded Shoes  ",oldprice:1999, price: 689, discount: "70%", img: "images/shoes5.jpg", link: "https://ajiio.co/4RmjMx" },
     { title: "branded Shoes  ",oldprice:1999, price: 629, discount: "70%", img: "images/shoes6.jpg", link: "https://myntr.in/YAGxzQ" },
-
-
-  ],
-  dailyDeals:[
     // { title: "wMen T-Shirt",oldprice:1, price: 199, discount: "90%", img: "images/pro sh 2.jpg", link: "" },
     
   ],
