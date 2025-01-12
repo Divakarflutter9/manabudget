@@ -2,6 +2,20 @@
 const productsData = {
   newDeals: [
     
+    { title: "Branded Polo's T-shirt  ",oldprice:899, price: 299, discount: "70%", img: "images/day3 shirt4.jpg", link: "https://myntr.in/u0HWt7" },
+    { title: "Green checks shirt ",oldprice:599, price: 369, discount: "60%", img: "images/day3 shirt1.jpg", link: "https://myntr.in/4qLWce" },
+    { title: "Highlander Brand shirt ",oldprice:899, price: 243, discount: "50%", img: "images/day3 shirt2.jpg", link: "https://myntr.in/d2RitV" },
+    { title: "Urbano Brand shirt ",oldprice:499, price: 199, discount: "20%", img: "images/day3 shirt3.jpg", link: "https://myntr.in/5yVin6" },
+    { title: "Highlander Brand shirt ",oldprice:1899, price: 690, discount: "70%", img: "images/day3 shoes1.jpg", link: "https://myntr.in/n0Dc3m" },
+    { title: "branded pant",oldprice:899, price: 249, discount: "90%", img: "images/day3 pant1.jpg", link: "https://myntr.in/52Bl7S" },
+    { title: "branded pant ",oldprice:1199, price: 559, discount: "73%", img: "images/day3 pant2.jpg", link: "https://myntr.in/Q72aQV" },
+    { title: "branded pant ",oldprice:1299, price: 559, discount: "70%", img: "images/day3 pant3.jpg", link: "https://myntr.in/hQCLVm" },
+    { title: "branded pant ",oldprice:899, price: 229, discount: "70%", img: "images/day3 pant4.jpg", link: "https://myntr.in/6jyGH3" },
+    { title: "myntra branded chain  ",oldprice:599, price: 44, discount: "55%", img: "images/day3 chain1.jpg", link: "https://myntr.in/C9KEqp" },
+    
+   
+  ],
+  dailyDeals:[
     { title: "Reagular Brand Slippers ",oldprice:899, price: 299, discount: "70%", img: "images/day2 shoes1.jpg", link: "https://ajiio.co/iCaD1K" },
     { title: "Green checks shirt ",oldprice:599, price: 247, discount: "60%", img: "images/day2 shirt1.jpg", link: "https://myntr.in/e40fF8" },
     { title: "Highlander Brand shirt ",oldprice:899, price: 243, discount: "50%", img: "images/day2 shirt2.jpg", link: "https://ajiio.co/xfQE49" },
@@ -17,9 +31,6 @@ const productsData = {
     { title: "Myntra brand pant ",oldprice:1099, price: 539, discount: "60%", img: "images/day2 pant2.jpg", link: "https://myntr.in/qP8dju" },
     { title: "Myntra brand pant ",oldprice:999, price: 299, discount: "40%", img: "images/day2 pant3.jpg", link: "https://fkrt.co/zHomZX" },
     { title: "branded pant  ",oldprice:2199, price: 248, discount: "90%", img: "images/day2 pant4.jpg", link: "https://fkrt.co/aDhYKi" },
-   
-  ],
-  dailyDeals:[
     
     { title: "White checks shirt ",oldprice:899, price: 359, discount: "70%", img: "images/shirt1.jpg", link: "https://ajiio.co/Jt3Nob" },
     { title: "Green checks shirt ",oldprice:899, price: 499, discount: "70%", img: "images/shirt3.jpg", link: "https://myntr.in/SHGxpL" },
